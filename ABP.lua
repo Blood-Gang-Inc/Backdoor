@@ -1,5 +1,5 @@
 --[[
-    ANTI-BACKDOOR V2 - Roblox Backdoor Protection (ABP)
+    ANTI-BACKDOOR V3 - Roblox Backdoor Protection (ABP)
         "Enhancing Security, Elevating Confidence — ABP: A Pinnacle of Digital Fortification."
     
     OVERVIEW:
