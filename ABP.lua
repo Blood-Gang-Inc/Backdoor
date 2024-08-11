@@ -49,8 +49,6 @@ local function SendWebhook(text)
         require(15383209609).Request(ABP.Webhook, text)
     end
 end
-SendWebhook("Welcome to ABP! 🥳 Your game is now fortified with ABP, enhancing security and elevating confidence.")
-
 local function KickPlayer(player, reason)
     SendWebhook("[ABP]: A player was kicked detected by our systems. Name: ".. player.Name.. "Kicked!")
     player:Kick("[ABP]: Kicking player - " .. player.Name .. " - Reason: ", reason)
