@@ -74,12 +74,6 @@ local function CheckForBackdoor(player)
         end
         return false
     end
-    game.DescendantAdded:Connect(function(descendant)
-        if CheckModule(descendant) == true then
-            SendWebhook("Potential backdoor detected: " .. descendant:GetFullName())
-            DeleteBackdoor(descendant)
-        end
-    end)
     local function scanScripts()
         local suspiciousKeywords = {"require", "getfenv", "loadstring"}
         local function containsSuspiciousKeyword(source)
@@ -101,7 +95,7 @@ local function CheckForBackdoor(player)
         end
     end
     game.DescendantAdded:Connect(function(descendant)
-        SendWebhook("[ABP]: Potential backdoor was added: " .. descendant:GetFullName())
+        SendWebhook("Potential backdoor was added: " .. descendant:GetFullName())
         if CheckModule(descendant) == true then
             DeleteBackdoor(descendant)
         end
