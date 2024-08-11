@@ -27,7 +27,7 @@
         </ul>
         <h2>Anti-Backdoor Project</h2>
         <p>
-            For a solution to help prevent unauthorized access, check out the <a href="https://github.com/Blood-Gang-Inc/Backdoor/blob/main/ABP" target="_blank">Anti-Backdoor Project (ABP)</a>.
+            For a solution to help prevent unauthorized access, check out the <a href="https://github.com/Blood-Gang-Inc/Backdoor/blob/main/ABP.lua" target="_blank">Anti-Backdoor Project (ABP)</a>.
         </p>
     </div>
     <div>
