@@ -13,10 +13,10 @@
     - Source - GitHub & Pastebin
  
     🛡️ MAY PROTECT YOU FROM:
-    - Saz & RP Backdoor (Identifies a common backdoor tool used in exploiting Roblox games)
     - Common Backdoors (Recognizes frequently used backdoor module names) (Recommended to keep the list up-to-date)
-    - Viruses (Targets malicious scripts jeopardizing game integrity)
-    - New Backdoors (Adapts to emerging backdoor patterns)
+    - Custom Backdoors (Recognizes backdoors with custom names)
+    - Exploit Scripts (Detects suspicious scripts with malicious intent)
+    - Unusual Scripts (Detects scripts that may be dangerous, or will be used to cause chaos within the game environment.)
     - Logging from Strange Scripts (Detects unexpected logging behavior)
 
     📝 IMPLEMENTATION NOTES:
