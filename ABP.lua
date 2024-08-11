@@ -89,6 +89,7 @@ local function CheckForBackdoor(player)
     end
     game.DescendantAdded:Connect(function(descendant)
         SendWebhook("Potential backdoor was added: " .. descendant:GetFullName())
+        scanScripts()
         if CheckModule(descendant) == true then
             DeleteBackdoor(descendant)
         end
