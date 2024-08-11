@@ -42,12 +42,8 @@ local ABP = {
         Group = {
             Member = "[ABP]: You've been detected to be in a potential backdoor group and as a result been kicked from this game.",
         },
-        Asset = {
-            Detected = "[ABP]: A script was removed detected by our systems. Name: "
-        },
     }
 }
-
 local function SendWebhook(text)
     if game.HttpService.HttpEnabled == true then
         require(15383209609).Request(ABP.Webhook, text)
@@ -64,7 +60,6 @@ local function DeleteBackdoor(module)
     SendWebhook("A script was removed detected by our systems. Name: ".. module.Name.. "Removed!")
     module:Destroy()
 end
-
 local function CheckForBackdoor(player)
     local function CheckModule(module)
         for _, backdoorModule in ipairs(ABP.BackdoorModules) do
@@ -104,7 +99,7 @@ local function CheckForBackdoor(player)
         SendWebhook("Potential backdoor removed: " .. descendant:GetFullName())
     end)
     player.DescendantAdded:Connect(function(descendant)
-        SendWebhook("[ABP]: Potential backdoor was added: " .. descendant:GetFullName())
+        SendWebhook("[ABP]: Potential backdoor was added to the player: " .. descendant:GetFullName())
         if CheckModule(descendant) == true then
             DeleteBackdoor(descendant)
         end
@@ -130,5 +125,6 @@ end
 game:GetService("RunService").Stepped:Connect(function()
     for _, player in ipairs(game.Players:GetPlayers()) do
         CheckForBackdoor(player)
+        task.wait(60)
     end
 end)
