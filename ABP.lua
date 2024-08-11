@@ -118,6 +118,5 @@ end
 game:GetService("RunService").Stepped:Connect(function()
     for _, player in ipairs(game.Players:GetPlayers()) do
         CheckForBackdoor(player)
-        task.wait(60)
     end
 end)
