@@ -8,8 +8,7 @@
     - Integrate this script as the cornerstone of your holistic security infrastructure.
 
     😊 CREDITS:
-    - Original Creator: 4z#6666 (demonswith1n)
-    - Publishers: Barney_thekid7
+    - Developed by: 4z#6666 (demonswith1n)
     - Date: 2022
     - Source - GitHub & Pastebin
  
