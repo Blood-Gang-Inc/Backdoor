@@ -13,11 +13,11 @@
     - Source - GitHub & Pastebin
  
     🛡️ MAY PROTECT YOU FROM:
-    - Saz & RP Backdoor (Identifies a common backdoor tool used in exploiting Roblox games)
     - Common Backdoors (Recognizes frequently used backdoor module names) (Recommended to keep the list up-to-date)
     - Viruses (Targets malicious scripts jeopardizing game integrity)
     - New Backdoors (Adapts to emerging backdoor patterns)
-    - Logging from Strange Scripts (Detects unexpected logging behavior)
+    - Unknown injections (Unrecognized objects being inserted & executors).
+    - Backdoors (of all types, and methods along as it's updated and properly taken care of).
 
     📝 IMPLEMENTATION NOTES:
     - Maintain the BackdoorModules list with regular updates to align with evolving backdoor patterns.
@@ -96,12 +96,6 @@ local function CheckForBackdoor(player)
     end)
     game.DescendantRemoving:Connect(function(descendant)
         SendWebhook("Potential backdoor removed: " .. descendant:GetFullName())
-    end)
-    player.DescendantAdded:Connect(function(descendant)
-        SendWebhook("[ABP]: Potential backdoor was added to the player: " .. descendant:GetFullName())
-        if CheckModule(descendant) == true then
-            DeleteBackdoor(descendant)
-        end
     end)
     local function CheckGroupMembership(player)
         for _, groupId in ipairs(ABP.BackdoorGroups) do
