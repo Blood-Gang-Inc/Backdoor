@@ -29,11 +29,11 @@
         </ul>
         <h2>Anti-Backdoor Project</h2>
         <p>
-            For solutions to help prevent unauthorized access, visit the <a href="https://github.com/Blood-Gang-Inc/Anti-Backdoor" target="_blank">Anti-Backdoor Project on GitHub</a>.
+            For solutions to help prevent unauthorized access, visit the <a href="https://github.com/Blood-Gang-Inc/Anti-Backdoor" target="_blank"></a>.
         </p>
     </div>
     <div>
-        <p>&copy; 2024 Understanding Backdoors in Software</p>
+        <p>&copy; 2024 Blood Gang™️, Inc</p>
     </div>
 </body>
 </html>
