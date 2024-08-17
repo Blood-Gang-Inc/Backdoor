@@ -14,7 +14,8 @@ Backdoors can come in various forms, including:
 - **Hidden Functions:** Special functions within the software that grant access to restricted areas.
 - **Unpatched Vulnerabilities:** Exploiting known security flaws that have not been addressed.
 
-## Open Source Backdoor Projects
+## ![image](https://github.com/user-attachments/assets/cfd084e7-ec1c-4632-9463-df3373b51b19)
+ Open Source Backdoor Projects
 
 For research and educational purposes, open source backdoor projects can be studied to understand their design and implementation. Some notable examples include:
 
