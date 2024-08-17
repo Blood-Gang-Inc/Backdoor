@@ -21,7 +21,7 @@ For research and educational purposes, open source backdoor projects can be stud
 - [Backdoor Project Releases](https://github.com/Blood-Gang-Inc/backdoor/releases)
 - [Saz](https://github.com/Blood-Gang-Inc/Saz) (Private Project)
 
-## Anti-Backdoor Project
+## ![image](https://github.com/user-attachments/assets/ba78de70-ec68-45e8-8d4b-fbc5de812820) Anti-Backdoor Project
 
 For solutions to help prevent unauthorized access, visit the [Anti-Backdoor Project on GitHub](https://github.com/Blood-Gang-Inc/Anti-Backdoor).
 
