@@ -1,7 +1,6 @@
 -- Plugin Setup
 local toolbar = plugin:CreateToolbar("Script Importer")
-local button = toolbar:CreateButton("Modify Script", "Insert import methods into scripts", "rbxassetid://4458901886")
-local isEnabled = false
+local button = toolbar:CreateButton("Script Importer", "Automatically inserts import methods into scripts", "rbxassetid://4458901886")
 
 -- Function to modify a script
 local function modifyScript(script, method)
@@ -27,17 +26,9 @@ end
 
 -- Function to handle script modification
 local function onScriptOpened(script)
-    if isEnabled then
-        -- Modify the script with the chosen method (defaulting to require)
-        modifyScript(script, "require") -- Change this to the desired method
-    end
+    -- Automatically modify the script with the chosen method (defaulting to require)
+    modifyScript(script, "require") -- Change this to the desired method
 end
-
--- Enable or disable the plugin
-button.Click:Connect(function()
-    isEnabled = not isEnabled
-    button:SetActive(isEnabled)
-end)
 
 -- Connect to ScriptEditorService
 local ScriptEditorService = game:GetService("ScriptEditorService")
